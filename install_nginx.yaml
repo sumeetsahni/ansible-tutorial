@@ -6,6 +6,5 @@
       apt: pkg=nginx state=present update_cache=true
       notify:
        - start: nginx
-  handlers:
     - name: start Nginx
       service: name=nginx state=started
